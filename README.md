@@ -50,6 +50,44 @@
 
 ![alt text](image-12.png)
 
-## Install stress application at EC2
+## 3. Install stress application at EC2
+
+- In the AWS Management Console, type `EC2` into the search box, and then select the `EC2` service.
+•	On the Instances page, select the `Cloudwatch lab` check box, and then select `Connect`.
 
 ![alt text](image-13.png)
+
+- To install the Stress Application
+
+``` sudo yum install stress -y ```
+
+``` sudo stress --cpu 4 ```
+
+## 4. Monitor the CPU High Usage Alert alarm for the WebServer EC2 instance ##
+
+- In the AWS Management Console, type `EC2` into the search box, and then select the `EC2` service.
+
+![alt text](image-14.png)
+
+- Select `Cloudwatch lab` and `Monitoring`
+
+![alt text](image-15.png)
+
+## 5. Check CPU High Usage Alert ##
+
+- In the AWS Management Console, type `Cloudwatch` into the search box, and then select the `CloudWatch` service.
+
+![alt text](image-16.png)
+
+- Click `All alarms`
+
+![alt text](image-17.png)
+
+- You will see alarm is `in alarm` state
+
+![alt text](image-18.png)
+
+--------------------------
+***That it is. Congratulations, you have completed Lab-How To Create a CloudWatch Alarm for CPU Utilization***
+
+--------------------------
